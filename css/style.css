@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-bottom: 70px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation span {
+    padding: 17px 0;
+}
+
+.navigation .lang {
+    margin-right: 50px;
+    font-family: 'Tourney';
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.navigation .nav-info {
+    font-family: 'Staatliches';
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+main .container {
+    padding-bottom: 90px;
+}
+
+.container div:not(:last-child){
+    margin-bottom: 70px;
+}
+
+.container h2 {
+    margin-bottom: 40px;
+    font-family: 'Francois One', sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: flex-start;
+}
+
+.container h2 span {
+    font-family: 'Farro', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.container p, ul {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 28px;
+    line-height: 48px;
+}
+
+.container .underline {
+    text-decoration: underline;
+}
+
+.container .cursive {
+    font-style: italic;
+}
+
+.container .bold {
+    font-weight: 700;
+}
+
+.container .background {
+    background-color: grey;
+}
+
+.react ul li {
+    margin-top: 40px;
+}
+
+.react ul .second p {
+    margin-top: 40px;
+}
+
+.list,
+.two {
+    margin-top: 40px;
+}
