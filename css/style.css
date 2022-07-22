@@ -3,10 +3,18 @@
     line-height: 1;
 }
 
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+}
+
+body {
+    font-size: 28px;
 }
 
 .visually-hidden {
@@ -23,89 +31,109 @@
 header .container {
     display: flex;
     justify-content: space-between;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    margin-bottom: 70px;
+    align-content: center;
+    padding: 13px 0;
+    min-height: 80px;
 }
 
-.navigation {
+.header-inner {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navigation span {
-    padding: 17px 0;
-}
-
-.navigation .lang {
-    margin-right: 50px;
+.lang {
     font-family: 'Tourney';
-    font-size: 22px;
     font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    margin-right: 50px;
 }
 
-.navigation .nav-info {
-    font-family: 'Staatliches';
-    font-size: 22px;
+.list-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.item-header {
+    font-family: 'Staatliches', cursive;
     font-weight: 400;
-    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 0.03em;
+}
+
+.item-header:not(:last-child) {
+    margin-right: 10px;
+}
+
+.logo {
+    width: 238px;
+    height: 54px;
 }
 
 main .container {
+    margin-top: 70px;
     padding-bottom: 90px;
 }
 
-.container div:not(:last-child){
+section:not(:last-child) {
     margin-bottom: 70px;
 }
 
-.container h2 {
-    margin-bottom: 40px;
-    font-family: 'Francois One', sans-serif;
-    font-size: 36px;
-    text-transform: uppercase;
+.title-section {
     display: flex;
     align-items: flex-start;
+    font-family: 'Francois One', sans-serif;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
 }
 
-.container h2 span {
+.title-section span {
     font-family: 'Farro', sans-serif;
+    font-size: 16px;
     font-weight: 300;
-    font-size: 15px;
-    margin-left: 10px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    margin-left: 10px; 
+    line-height: 1;
 }
 
-.container p, ul {
+.text,
+ul {
     font-family: 'PT Sans', sans-serif;
-    font-size: 28px;
+    font-weight: 400;
     line-height: 48px;
 }
 
-.container .underline {
+.text:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.list-item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.list-item p {
+    margin-top: 40px;
+}
+
+.underline {
     text-decoration: underline;
 }
 
-.container .cursive {
+.cursive {
     font-style: italic;
 }
 
-.container .bold {
+.bold {
     font-weight: 700;
 }
 
-.container .background {
-    background-color: grey;
+.background {
+    background-color: #DADADA;
 }
 
-.react ul li {
-    margin-top: 40px;
-}
 
-.react ul .second p {
-    margin-top: 40px;
-}
-
-.list,
-.two {
-    margin-top: 40px;
-}
