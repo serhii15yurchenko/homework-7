@@ -8,13 +8,14 @@ a{
     color: #000000;
 }
 
+body {
+    font-size: 28px;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-body {
-    font-size: 28px;
+    padding: 0 15px;
 }
 
 .visually-hidden {
@@ -28,13 +29,16 @@ body {
     overflow: hidden;
 }
 
+header {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    min-height: 80px;
+}
+
 header .container {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    min-height: 80px;
 }
 
 .header-inner {
@@ -72,8 +76,8 @@ header .container {
     height: 54px;
 }
 
-main .container {
-    margin-top: 70px;
+main {
+    padding-top: 70px;
     padding-bottom: 90px;
 }
 
@@ -137,21 +141,19 @@ ul {
     background-color: #DADADA;
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:650px) {
     
     body {
         font-size: 22px;
     }
-    
-    .container {
-        padding: 0 15px;
-    }
-    
-    header .container {
-        flex-direction: column-reverse;
+
+    header {
         padding-top: 10px;
         padding-bottom: 10px;
-        min-height: 80px;
+    }
+        
+    header .container {
+        flex-direction: column-reverse;
     }
 
     .header-inner {
@@ -170,8 +172,8 @@ ul {
         margin-bottom: 20px;
     }
 
-    main .container {
-        margin-top: 45px;
+    main {
+        padding-top: 45px;
         padding-bottom: 45px;
     }
 
