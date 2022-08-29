@@ -3,8 +3,17 @@
     line-height: 1;
 }
 
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+body {
+    font-size: 28px;
+}
+
 .container {
-    max-width: 1200px;
+    max-width: 1230px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -20,92 +29,253 @@
     overflow: hidden;
 }
 
+/* header {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    min-height: 80px;
+} */
+
 header .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 13px;
     padding-bottom: 13px;
-    margin-bottom: 70px;
+    min-height: 80px;
 }
 
-.navigation {
+.header-inner {
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
-.navigation span {
-    padding: 17px 0;
-}
-
-.navigation .lang {
-    margin-right: 50px;
+.lang {
     font-family: 'Tourney';
-    font-size: 22px;
     font-weight: 600;
-}
-
-.navigation .nav-info {
-    font-family: 'Staatliches';
     font-size: 22px;
-    font-weight: 400;
-    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-right: 50px;
 }
 
-main .container {
+.list-header {
+    display: flex; 
+}
+
+.item-header {
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 0.03em;
+}
+
+.one::after {
+    content:'/';
+    margin: 0 10px;
+}
+
+/* .item-header:not(:last-child) {
+    margin-right: 10px;
+} */
+
+.logo {
+    width: 238px;
+    height: 54px;
+}
+
+main {
+    padding-top: 70px;
     padding-bottom: 90px;
 }
 
-.container div:not(:last-child){
+section:not(:last-child) {
     margin-bottom: 70px;
 }
 
-.container h2 {
-    margin-bottom: 40px;
-    font-family: 'Francois One', sans-serif;
-    font-size: 36px;
-    text-transform: uppercase;
+.title-section {
     display: flex;
     align-items: flex-start;
+    font-family: 'Francois One', sans-serif;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
 }
 
-.container h2 span {
+.title-section span {
     font-family: 'Farro', sans-serif;
+    font-size: 16px;
     font-weight: 300;
-    font-size: 15px;
-    margin-left: 10px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    margin-left: 10px; 
+    line-height: 1;
 }
 
-.container p, ul {
+.text,
+.list {
     font-family: 'PT Sans', sans-serif;
-    font-size: 28px;
+    font-weight: 400;
     line-height: 48px;
 }
 
-.container .underline {
+.text:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.list-item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.underline {
     text-decoration: underline;
 }
 
-.container .cursive {
+.cursive {
     font-style: italic;
 }
 
-.container .bold {
+.bold {
     font-weight: 700;
 }
 
-.container .background {
-    background-color: grey;
+.background {
+    background-color: #DADADA;
 }
 
-.react ul li {
-    margin-top: 40px;
+@media only screen and (max-width:850px) {
+    
+    body {
+        font-size: 24px;
+    }
+
+    .lang {
+        font-size: 18px;
+        margin-right: 35px;
+    }
+
+    .item-header {
+        font-size: 18px;
+    }
+    
+    .one::after {
+        margin: 0 5px;
+    }
+
+    .logo {
+        width: 180px;
+        height: 40px;
+    }
+
+    main {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+
+    section:not(:last-child) {
+        margin-bottom: 65px;
+    }
+
+    .title-section {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+
+    .title-section span {
+        font-size: 14px;
+        margin-left: 8px; 
+    }
+
+    .text,
+    .list {
+    line-height: 45px;
+    }
+
+    .text:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    
+    .list-item:not(:last-child) {
+        margin-bottom: 30px;
+    }
 }
 
-.react ul .second p {
-    margin-top: 40px;
+@media only screen and (max-width:580px) {
+    
+    body {
+        font-size: 19px;
+    }
+    
+    header .container {
+        flex-direction: column-reverse;
+    }
+
+    .header-inner {
+        flex-direction: column-reverse;
+    }
+
+    .lang {
+        font-size: 16px;
+        margin-right: 0px;
+    }
+
+    .item-header {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        width: 160px;
+        height: 40px;
+        margin-bottom: 15px;
+    }
+
+    main {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+    section:not(:last-child) {
+        margin-bottom: 45px;
+    }
+
+    .title-section {
+        font-size: 22px;
+        line-height: 34px;
+        margin-bottom: 25px;
+    }
+
+    .title-section span {
+        font-size: 13px;
+        margin-left: 7px; 
+    }
+
+    .text,
+    .list {
+    line-height: 40px;
+    }
+
+    .text:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    .list-item:not(:last-child) {
+        margin-bottom: 25px;
+    }
 }
 
-.list,
-.two {
-    margin-top: 40px;
+@media only screen and (max-width:400px) {
+
+    .title-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title-section span {
+        font-size: 13px;
+        margin-left: 0px;
+        margin-top: 5px;
+    }
 }
+
